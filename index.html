@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Initial hidden state */
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Intro Screen -->
+        <div class="screen intro-screen">
+            <h1>Kuch special dekhogi? 😊</h1>
+            <div class="buttons">
+                <button id="yesBtn">Haan! ❤️</button>
+                <button id="noBtn">Nahi 🙅‍♀️</button>
+            </div>
+            <p id="forceMsg">Ab toh dekhna padega! 😏</p>
+        </div>
+
+        <!-- Proposal Screen -->
+        <div class="screen proposal-screen hidden">
+            <div class="stick-figures">
+                <!-- Boy with Face -->
+                <div class="stick-man">
+                    <img src="images/img1.png" class="face-boy">
+                    <div class="body"></div>
+                    <div class="hands">
+                        <div class="bouquet">💐</div>
+                    </div>
+                </div>
+                
+                <!-- Girl with Face -->
+                <div class="stick-woman">
+                    <img src="images/img2.png" class="face-girl">
+                    <div class="body"></div>
+                    <div class="dress"></div>
+                </div>
+            </div>
+            <div class="proposal-text">Will you be mine? ❤️</div>
+        </div>
+
+        <!-- Celebration Screen -->
+        <div class="screen celebration-screen hidden">
+            <canvas id="fireworks"></canvas>
+            <div class="couple-dance">
+                <img src="images/img1.png" class="dancing-boy">
+                <img src="images/img2.png" class="dancing-girl">
+            </div>
+            <h2>She Said YES! 💃🕺</h2>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

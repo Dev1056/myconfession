@@ -1,0 +1,51 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Face Styles */
+.face-boy, .face-girl {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+    position: absolute;
+    z-index: 100;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Boy Specific */
+.face-boy {
+    top: 10px;
+    left: 30px;
+}
+
+/* Girl Specific */
+.face-girl {
+    top: 15px;
+    left: 25px;
+    border-color: #ffb6c1;
+}
+
+/* Dancing Couple */
+.dancing-boy, .dancing-girl {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: dance 2s infinite alternate;
+}
+
+.dancing-girl {
+    animation-delay: 0.5s;
+}
+
+@keyframes dance {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-20px) rotate(5deg); }
+}
